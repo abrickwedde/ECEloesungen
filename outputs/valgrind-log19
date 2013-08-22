@@ -1,0 +1,66 @@
+==21795== Memcheck, a memory error detector
+==21795== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==21795== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==21795== Command: ./pa01 inputs/input19
+==21795== Parent PID: 21786
+==21795== 
+--21795-- 
+--21795-- Valgrind options:
+--21795--    --tool=memcheck
+--21795--    --leak-check=full
+--21795--    --verbose
+--21795--    --log-file=outputs/valgrind-log19
+--21795-- Contents of /proc/version:
+--21795--   Linux version 2.6.32-358.14.1.el6.x86_64 (mockbuild@x86-022.build.eng.bos.redhat.com) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-3) (GCC) ) #1 SMP Mon Jun 17 15:54:20 EDT 2013
+--21795-- Arch and hwcaps: AMD64, amd64-sse3-cx16
+--21795-- Page sizes: currently 4096, max supported 4096
+--21795-- Valgrind library directory: /usr/lib64/valgrind
+--21795-- Reading syms from /home/shay/a/abrickwe/ECE264/solutions/ECE264Assignments/Fall2013/PA01/pa01
+--21795-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--21795--    object doesn't have a dynamic symbol table
+--21795-- Reading syms from /lib64/ld-2.12.so
+--21795-- Scheduler: using generic scheduler lock implementation.
+--21795-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==21795== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-21795-by-abrickwe-on-ecelinux08.ecn.purdue.edu
+==21795== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-21795-by-abrickwe-on-ecelinux08.ecn.purdue.edu
+==21795== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-21795-by-abrickwe-on-ecelinux08.ecn.purdue.edu
+==21795== 
+==21795== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==21795== don't want to do, unless you know exactly what you're doing,
+==21795== or are doing some strange experiment):
+==21795==   /usr/lib64/valgrind/../../bin/vgdb --pid=21795 ...command...
+==21795== 
+==21795== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==21795==   /path/to/gdb ./pa01
+==21795== and then give GDB the following command
+==21795==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=21795
+==21795== --pid is optional if only one valgrind process is running
+==21795== 
+--21795-- REDIR: 0x3354217520 (strlen) redirected to 0x38049551 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--21795-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--21795-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+--21795-- REDIR: 0x3354217390 (index) redirected to 0x4a07bf0 (index)
+--21795-- REDIR: 0x3354217410 (strcmp) redirected to 0x4a08530 (strcmp)
+--21795-- Reading syms from /lib64/libc-2.12.so
+--21795-- REDIR: 0x3354a84e80 (strcasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--21795-- REDIR: 0x3354a87140 (strncasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--21795-- REDIR: 0x3354a82df0 (__GI_strrchr) redirected to 0x4a07a70 (__GI_strrchr)
+--21795-- REDIR: 0x3354a7f890 (strcmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--21795-- REDIR: 0x3354b27a80 (__strcmp_sse42) redirected to 0x4a08490 (strcmp)
+--21795-- REDIR: 0x3354a7a8a0 (malloc) redirected to 0x4a0696c (malloc)
+--21795-- REDIR: 0x3354a8aca0 (strchrnul) redirected to 0x4a09f10 (strchrnul)
+--21795-- REDIR: 0x3354a7b6d0 (free) redirected to 0x4a06369 (free)
+--21795-- REDIR: 0x3354a81310 (__GI_strlen) redirected to 0x4a07f70 (__GI_strlen)
+==21795== 
+==21795== HEAP SUMMARY:
+==21795==     in use at exit: 0 bytes in 0 blocks
+==21795==   total heap usage: 2 allocs, 2 frees, 908 bytes allocated
+==21795== 
+==21795== All heap blocks were freed -- no leaks are possible
+==21795== 
+==21795== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
+--21795-- 
+--21795-- used_suppression:      4 U1004-ARM-_dl_relocate_object
+--21795-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==21795== 
+==21795== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
