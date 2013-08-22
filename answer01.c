@@ -44,18 +44,18 @@ just a few words, for testing github
    If the array has no elements (length is 0), then the function returns 0.
 */
 int addElement(int * array, int length)
-{ int score = 0;
+{ int ergb = 0;
 
   if (length == 0){
-    score = 0;
+    ergb = 0;
   }
   else{
     int i = 0;
     for (i = 0; i<(length); i++){
-      score = score + array[i];
+      ergb = ergb + array[i];
     }
   }
-  return score;
+  return ergb;
 }
 /*
  * =================================================================
