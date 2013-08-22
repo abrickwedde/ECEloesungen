@@ -4,7 +4,6 @@
 #include "pa01.h"
 
 /* == Note 1 :: C does not initialize variables for you ==
-just a few words, for testing github
  *
  * Please keep in mind that C does not initialize variables.
  *
